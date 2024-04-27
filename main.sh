@@ -23,7 +23,7 @@ mount | head -n 5 > mount.txt
 echo > permissions.txt
 chmod a+rwx permissions.txt
 export TESTENV1="test"
-grep -E '\b\w{3,}\b' text.txt  > regex.txt
+grep -E '^.{3,}$' text.txt  > regex.txt
 cd ..
 
 exit 
